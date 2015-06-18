@@ -48,21 +48,11 @@ void drawOneSpectrumTSV(string thefile){
 void main(){
 	TFile* f = new TFile("SpectraData.root","recreate");
 	string files[]={
-         "20150618_Ba133_PMT1.1kV_ampGain20",
-         "20150618_Ba133_PMT1.1kV_ampGain50",
-         "20150618_Ba133_PMT1.1kV_ampGain100",
-         "20150618_Co57_PMT1.1kV_ampGain50",
-         "20150618_Co57_PMT1.1kV_ampGain100",
-         "20150618_Co60_PMT1.1kV_ampGain20",
-         "20150618_Mn54_PMT1.1kV_ampGain20",
-         "20150618_Mn54_PMT1.1kV_ampGain50",
-         "20150618_Na22_PMT1.1kV_ampGain20",
-         "20150618_Na22_PMT1.1kV_ampGain50",
          "20150618_unKnownSource_PMT1.1kV_ampGain50"
 		};
 			
 	
-	for(int i=0;i<60-50+1;i++){
+	for(int i=0;i<1;i++){
 	  cout<<files[i]<<endl;
 	  drawOneSpectrumTSV(files[i]);
 	}
