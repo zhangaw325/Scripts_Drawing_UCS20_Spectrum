@@ -28,7 +28,7 @@ void drawOneSpectrumTSV(string thefile){
   float number=0;
   int count=0;
   while(fin>>bin>>number){
-    hist->SetBinContent(bin,number);
+    hist->SetBinContent(bin,number/time);
     count+=number;
   }
   fin.close();
